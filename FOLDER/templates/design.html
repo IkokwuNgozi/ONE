@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logbook Entry</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='logbook.css') }}">
+</head>
+<body>
+    <h2>NUPRC DAILY LOG</h2>
+    <form method="POST">
+        <label>Name:</label>
+        <textarea name="name" required></textarea><br><br>
+
+        <label>Activity:</label>
+        <textarea name="activity" required></textarea><br><br>
+
+        <label>Remarks:</label>
+        <textarea name="remarks"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
